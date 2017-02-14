@@ -7,12 +7,13 @@
 // Store the following into variables: job title, geographic location, partner's name, number of children.
 // Output your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 /*
-var jobTitle = "Rock Star";
+/var jobTitle = "Rock Star";
 var geographicLocation = "Toronto";
 var partnersName = "Kay";
 var numberOfChildren = "No";
-console.log("You will be a " + jobTitle + "in " + geographicLocation + ", and married to" + partnersName + "with " + numberOfChildren + " kids.");
+console.log("You will be a " + jobTitle + " in " + geographicLocation + ", and married to " + partnersName + " with " + numberOfChildren + " kids.");
 */
+
 
 // EXERCISE: The Age Calculator
 
@@ -22,12 +23,12 @@ console.log("You will be a " + jobTitle + "in " + geographicLocation + ", and ma
 // Store their birth year in a variable.
 // Calculate their age based on the stored values.
 // Output them to the screen like so: "They are NN years old.", substituting the values.
-/*
-var currentYear = 2017;
-var birthYear = 1989;
-var age = currentYear - birthYear;
-console.log("Your age is " + age );
-*/
+
+var currentYear = 2017
+var birthYear = 1989
+var age = (currentYear - birthYear)
+console.log("Paul is " + age + " years old. ");
+
 // EXERCISE: The Lifetime Supply Calculator
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
@@ -37,12 +38,7 @@ console.log("Your age is " + age );
 // Store an estimated amount per day (as a number).
 // Calculate how many you would eat total for the rest of your life.
 // Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".
-/*
-var currentAge = 27
-var maximumAge = 110
-var eatPerDay = 2250
-*/
-//console.log([maximumAge - currentAge] * eatPerDay);
+
 // EXERCISE: The Geometrizer
 
 // Calculate properties of a circle, using the definitions here.
@@ -51,10 +47,6 @@ var eatPerDay = 2250
 // Calculate the circumference based on the radius, and output "The circumference is NN".
 // Calculate the area based on the radius, and output "The area is NN".
 
-var radius = 360
-
-console.log("the circuference = " + 2 * (3.14) * radius)
-// WOOOOOOOW I GOT IT!
 // EXERCISE: The Temperature Converter
 
 // It's hot out! Let's make a converter based on the steps here.
