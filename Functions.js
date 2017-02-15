@@ -9,14 +9,25 @@
 // outputs your fortune to the screen like so:
 // Call that function 3 times with 3 different values for the arguments.
 
-function tellFortune() {
-  children(3)
-  partners_name("Sally")
-  location("Barrie")
-  job("Bushman")
+/*
+function tellFortune(children, partners_name, location, job){
+  console.log("You will be a " + job + " in " + location + "and married to" + partners_name + "with" + children + "kids.");
 }
 
-console.log("You will be a " + job + " in " + location + "and married to" + partners_name + "with" + children+ "kids.");
+tellFortune(3, "Sally", "Toronto", "Axe-Murderer");
+
+tellFortune(4, "Sally", "Toronto", "Axe-Murderer");
+tellFortune(35, "Sally", "Toronto", "Axe-Murderer");
+*/
+/*
+function tellFortune(children) {
+  console.log("You will be a " + job[0] + " in " + location + "and married to" + partners_name + "with" + children + "kids.");
+  console.log("You will be a " + job[1] + " in " + location + "and married to" + partners_name + "with" + children + "kids.");
+  console.log("You will be a " + job[2] + " in " + location + "and married to" + partners_name + "with" + children + "kids.");
+}
+*/
+
+
 // EXERCISE: The Age Calculator
 
 // Forgot how old you are? Calculate it!
@@ -28,6 +39,17 @@ console.log("You will be a " + job + " in " + location + "and married to" + part
 // Call the function three times with different sets of values.
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
 
+/*
+function calculateAge(birth_year, current_year){
+  console.log("You are  " + birth_year + " years old in " + current_year);
+}
+
+calculateAge([2017-1989], [2017]);
+calculateAge([2017-1979], [2017]);
+calculateAge([2017-1969], [2017]);
+*/
+
+
 // EXERCISE: The Lifetime Supply Calculator
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
@@ -38,6 +60,15 @@ console.log("You will be a " + job + " in " + location + "and married to" + part
 // outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
 // Call that function three times, passing in different values each time.
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
+
+function calculateSupply(age, amount_per_day){
+  var maxAge = (age * [amount_per_day * 365]);
+  console.log("You will need " + maxAge + " calories to last you until the ripe old age of " + age);
+}
+
+calculateSupply(99, 2000);
+calculateSupply(8, 2000);
+calculateSupply(27, 2000);
 
 // EXERCISE: The Geometrizer
 
@@ -51,6 +82,21 @@ console.log("You will be a " + job + " in " + location + "and married to" + part
 
 // Pass the radius to the function.
 // Calculate the area based on the radius, and output "The area is NN".
+/*
+function calcCircumfrence(radius){
+  var circumference = 2 * 3.14 * radius;
+  console.log("The circumference of the radius " + circumference);
+}
+
+function calcArea(radius){
+  var area = 3.14 * (radius * radius);
+  console.log("The area of the radius is " + area);
+
+}
+
+calcCircumfrence(22)
+calcArea(22)
+*/
 
 // EXERCISE: The Temperature Converter
 
@@ -64,3 +110,15 @@ console.log("You will be a " + job + " in " + location + "and married to" + part
 
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
+
+function celsiusToFahrenheit(celsius){
+  var fahrenheit = celsius * 1.8 + 32;
+  console.log(celsius + " celsius is " + fahrenheit + " fahrenheit");
+}
+
+function fahrenheitToCelsius(fahrenheit){
+  var celsius = [fahrenheit - 32] / 1.8;
+  console.log(fahrenheit + " fahrenheit is " + celsius + " celsius");
+}
+celsiusToFahrenheit(20);
+fahrenheitToCelsius(20);
